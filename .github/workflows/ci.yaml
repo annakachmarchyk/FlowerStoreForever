@@ -32,9 +32,9 @@ jobs:
         with:
           java-version: '17'
           distribution: 'adopt'
-      - name: Build with Gradle
-        run: ./gradlew build
-      - name: Run Application
-        run: java -jar build/libs/your-application.jar
+      # - name: Build with Gradle
+      #   run: ./gradlew build
+      # - name: Run Application
+      #   run: java -jar build/libs/your-application.jar
       - name: Test with Maven
         run: mvn --batch-mode --update-snapshots package
